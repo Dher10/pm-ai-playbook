@@ -3,7 +3,7 @@
 ![AI](https://img.shields.io/badge/AI-Prompt%20Library-blue)
 ![Product Management](https://img.shields.io/badge/Product-Management-green)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![License](https://img.shields.io/badge/license-personal-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 Language: English | Spanish version available at: [README_ES.md](README_ES.md)
 
