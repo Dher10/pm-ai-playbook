@@ -1,9 +1,9 @@
 # AI Product Management Playbook
 
-![AI](https://img.shields.io/badge/AI-Prompt%20Library-blue)
+![AI](https://img.shields.io/badge/AI-Product%20Management-blue)
 ![Product Management](https://img.shields.io/badge/Product-Management-green)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![License](https://img.shields.io/badge/license-personal-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 Idioma: Español | English version available at: [README.md](README.md)
 
@@ -15,217 +15,233 @@ Idioma: Español | English version available at: [README.md](README.md)
 - [Estructura del Repositorio](#estructura-del-repositorio)
 - [Manejo de Idiomas](#manejo-de-idiomas)
 - [Estructura de los Prompts](#estructura-de-los-prompts)
-- [Convención de Commits](#convención-de-commits)
 - [Cómo Usar Este Repositorio](#cómo-usar-este-repositorio)
+- [Estándares de Documentación](#estándares-de-documentación)
+- [Evolución Futura](#evolución-futura)
+- [Convención de Commits](#convención-de-commits)
 - [Disclaimer](#disclaimer)
 - [Inspiración y Recursos](#inspiración-y-recursos)
-- [Mejoras y Evolución](#mejoras-y-evolución)
-- [Propósito del Repositorio](#propósito-del-repositorio)
+- [Licencia](#licencia)
 
 ---
 
 ## Descripción General
 
-Este repositorio es una colección personal de **prompts de IA, workflows y plantillas de soporte** diseñadas para mejorar la productividad en actividades de Product Management.
+Este repositorio es un playbook público de Product Management asistido por IA.
 
-El objetivo es construir una **biblioteca organizada de prompts reutilizables**, estructurada por nivel de complejidad y uso, que apoye tareas comunes del trabajo de producto como:
+Está diseñado para organizar prompts reutilizables, workflows, plantillas, ejemplos y documentación de soporte para el trabajo práctico de Product Management.
 
-- documentación de producto  
-- análisis de requerimientos  
-- generación de PRD  
-- resúmenes de reuniones  
-- priorización de roadmap  
-- estructuración de workflows  
-- automatización operativa  
+El objetivo es ofrecer un toolkit estructurado y evolutivo que ayude a Product Managers a utilizar IA de forma más consistente en actividades comunes como:
 
-Los prompts de este repositorio han sido desarrollados y refinados a partir de **experiencia práctica en gestión de producto**, utilizando herramientas de IA para estructurar información, acelerar la documentación y mejorar procesos analíticos.
+- resúmenes de reuniones
+- documentación de producto
+- análisis de requerimientos
+- generación de PRD
+- priorización de roadmap
+- estructuración de workflows
+- automatización operativa
+- futuros agentes de producto asistidos por IA
 
-Más que una colección cerrada, este repositorio funciona como un **playbook vivo** que evoluciona conforme se desarrollan nuevos workflows, prompts y casos de uso.
+Más que una colección de prompts, este repositorio busca funcionar como un playbook práctico para aplicar IA a tareas de Product Management de forma repetible y mantenible.
+
+El contenido se desarrolla a partir de experiencia real en Product Management, refinamiento iterativo de prompts y estándares de documentación estructurada.
 
 ---
 
 ## Estructura del Repositorio
 
-El repositorio está organizado en carpetas según el tipo de herramienta o workflow.
+El repositorio está organizado alrededor de herramientas y workflows reutilizables para Product Management.
 
 ```text
-prompts/
-    general/
-    advanced/
-        meeting-minutes/
-        analysis/
-        documentation/
-        prioritization/
-
-templates/
-
-workflows/
-
-examples/
+pm-ai-playbook/
+├── README.md
+├── README_ES.md
+├── LICENSE
+├── prompts/
+│   ├── general/
+│   └── advanced/
+│       ├── meeting-minutes/
+│       ├── analysis/
+│       ├── documentation/
+│       └── prioritization/
+├── templates/
+├── workflows/
+├── examples/
+└── docs/
 ```
 
 ### prompts
 
-Contiene prompts estructurados para diferentes casos de uso de Product Management.
+Contiene prompts reutilizables de IA para casos de uso de Product Management.
 
-Los prompts se organizan en dos categorías principales:
+Los prompts se organizan en dos niveles principales:
 
-- **general/**: prompts standalone, reutilizables y diseñados para casos de uso amplios  
-- **advanced/**: prompts estructurados organizados por casos de uso específicos o workflows, que requieren mayor contexto, control o múltiples pasos  
+- **general/**: prompts standalone diseñados para reutilización directa y flexible.
+- **advanced/**: prompts más estructurados que pueden requerir contexto adicional, plantillas, reglas de validación, mayor control de salida o lógica multi-step.
 
 ### templates
 
-Plantillas reutilizables utilizadas por algunos prompts (por ejemplo formatos de Excel o documentos).
+Contiene plantillas reutilizables de soporte utilizadas por prompts o workflows.
+
+Los ejemplos pueden incluir formatos de reuniones, plantillas de PRD, matrices de priorización u otros artefactos estructurados de producto.
 
 ### workflows
 
-Documentación de procesos que combinan varios prompts para resolver tareas más complejas.
+Documenta procesos multi-step que combinan prompts, plantillas, ejemplos o criterios de validación para resolver tareas más amplias de Product Management.
 
 ### examples
 
-Ejemplos de entradas y casos prácticos que muestran cómo utilizar los prompts.
+Contiene entradas y salidas de ejemplo utilizadas para probar, validar y demostrar cómo deben usarse los prompts o workflows.
+
+### docs
+
+Contiene documentación interna sobre estructura del repositorio, estándares de prompts, criterios de calidad y principios de diseño.
 
 ---
 
 ## Manejo de Idiomas
 
-Los prompts se escriben en **inglés** para mantener consistencia y compatibilidad con la mayoría de herramientas de IA.
+Los prompts de este repositorio se escriben principalmente en inglés para mantener consistencia, mantenibilidad y compatibilidad con la mayoría de herramientas de IA.
 
-Sin embargo, los prompts están diseñados para soportar **entradas y salidas en múltiples idiomas**.
+Sin embargo, los prompts deben soportar entradas y salidas en múltiples idiomas.
 
 Regla general:
 
-- Entrada en español → salida en español  
-- Entrada en inglés → salida en inglés  
+- Entrada en español → salida en español
+- Entrada en inglés → salida en inglés
 
-En casos donde se utiliza un **formato o plantilla específica** (por ejemplo un archivo Excel), el **idioma del formato se mantiene**, mientras que el contenido insertado respeta el idioma de la reunión o del material analizado.
+Si se proporciona una plantilla o un formato documental predefinido, el idioma y la estructura original de la plantilla deben mantenerse sin cambios, salvo que el prompt indique explícitamente lo contrario.
 
-Esto permite reutilizar los mismos prompts en diferentes entornos de trabajo sin necesidad de mantener múltiples versiones.
+Esto permite reutilizar los prompts en diferentes entornos de trabajo sin mantener versiones separadas para cada idioma.
 
 ---
 
 ## Estructura de los Prompts
 
-Los prompts de este repositorio están diseñados para seguir una estructura consistente, permitiendo distintos niveles de complejidad.
+Los prompts de este repositorio deben seguir una estructura consistente para mejorar claridad, reutilización y mantenimiento.
 
-### General vs Advanced Prompts
+La estructura estándar de prompts se define en `docs/prompt-template.md`.
 
-Los prompts se organizan en dos niveles:
+Un prompt normalmente debe incluir:
 
-- **General prompts**: son simples, standalone y reutilizables directamente.
-- **Advanced prompts**: son más estructurados y pueden incluir instrucciones multi-step, validaciones, reglas de formato o mayor control sobre la salida.
+- Prompt Title
+- Purpose
+- When to Use
+- Inputs
+- Language Handling
+- Prompt Instructions
+- Output Format
+- Validation
+- Change Log
 
-Los prompts avanzados se utilizan típicamente en escenarios más específicos o como parte de workflows más complejos.
-
-### Estructura Base
-
-Todos los prompts siguen una estructura base estandarizada para facilitar su mantenimiento y reutilización.
-
-Normalmente incluyen:
-
-- descripción  
-- casos de uso  
-- manejo de idiomas  
-- prompt principal  
-- entradas esperadas  
-- salidas esperadas  
-- validaciones o notas adicionales  
-
-Mantener una estructura consistente facilita mejorar los prompts con el tiempo e integrarlos en workflows más complejos.
-
----
-
-## Convención de Commits
-
-Este repositorio utiliza **Conventional Commits** para mantener un historial de cambios claro.
-
-Ejemplos:
-
-```
-feat: add meeting minutes generation prompt
-feat: add multilingual support
-docs: update prompt documentation
-refactor: improve prompt structure
-```
-
-Esto facilita entender cómo evoluciona el repositorio.
+Esta estructura ayuda a que los prompts sean entendibles, reutilizables y más fáciles de mejorar con el tiempo.
 
 ---
 
 ## Cómo Usar Este Repositorio
 
-Este repositorio puede utilizarse como una **biblioteca personal de prompts para tareas de Product Management**.
+Un flujo típico de uso es:
 
-Flujo típico de uso:
+1. Identificar la tarea de Product Management que se quiere apoyar con IA.
+2. Ir a la carpeta correspondiente dentro de `prompts/`.
+3. Definir si la tarea requiere un prompt general o un prompt avanzado.
+4. Copiar el prompt y proporcionar las entradas requeridas.
+5. Utilizar cualquier plantilla de soporte si es necesario.
+6. Revisar la salida contra las reglas de validación incluidas en el prompt.
+7. Mejorar o adaptar el prompt solo cuando el caso de uso lo requiera.
 
-1. Identificar la tarea a resolver (análisis, documentación, reuniones, etc.).
-2. Definir si la tarea requiere un **prompt general** o un **prompt avanzado**.
-3. Navegar a la carpeta correspondiente dentro de `prompts`.
-4. Copiar el prompt y adaptarlo al contexto específico.
-5. Proporcionar las entradas necesarias (documentos, transcripciones, requerimientos, etc.).
-6. Si se requiere un formato específico, utilizar la plantilla correspondiente ubicada en `templates`.
+Los prompts generales son útiles cuando la tarea es flexible y no requiere formato estricto ni plantillas externas.
 
-Con el tiempo los prompts pueden mejorar, ampliarse o combinarse en **workflows más complejos**.
+Los prompts avanzados son útiles cuando la tarea requiere mayor control, una estructura predefinida, validación más fuerte o integración dentro de un workflow más amplio.
+
+---
+
+## Estándares de Documentación
+
+Los estándares y la gobernanza del repositorio se documentan en la carpeta `docs/`.
+
+Los documentos clave incluyen:
+
+- `docs/repository-structure.md` — estructura oficial del repositorio y propósito de cada carpeta.
+- `docs/prompt-template.md` — estructura estándar para prompts.
+- `docs/prompt-design-principles.md` — principios para crear prompts claros y reutilizables.
+- `docs/prompt-quality-checklist.md` — checklist para revisar prompts antes de agregarlos o actualizarlos.
+
+La carpeta `docs/` debe tratarse como el punto de referencia para mantener la consistencia del repositorio a medida que crece.
+
+---
+
+## Evolución Futura
+
+Se espera que este repositorio evolucione más allá de prompts individuales.
+
+Futuras mejoras pueden incluir:
+
+- prompts reutilizables adicionales
+- workflows avanzados de Product Management
+- ejemplos prácticos basados en entradas realistas
+- plantillas reutilizables para artefactos de producto
+- frameworks de producto adaptados para trabajo asistido por IA
+- agentes estructurados de IA para tareas de Product Management
+
+Los agentes se consideran un área futura de expansión.
+
+Más adelante podrán incluirse en este repositorio si se mantienen estrechamente conectados con prompts y workflows. Si se vuelven más técnicos, configurables o pesados en implementación, podrán gestionarse en un repositorio separado.
+
+El objetivo a largo plazo es construir un playbook práctico de Product Management asistido por IA que pueda ser usado, revisado y extendido por otras personas.
+
+---
+
+## Convención de Commits
+
+Este repositorio utiliza Conventional Commits para mantener un historial de cambios legible y mantenible.
+
+Tipos comunes de commit:
+
+- `feat` — nuevo prompt, workflow, plantilla o contenido funcional.
+- `fix` — corrección de un problema.
+- `docs` — actualización de documentación.
+- `refactor` — mejora estructural sin cambiar la intención principal.
+- `chore` — trabajo de mantenimiento.
+
+Ejemplos:
+
+```text
+feat: add meeting summary prompt
+docs: update repository structure
+refactor: improve prompt template
+chore: rename repository references
+```
 
 ---
 
 ## Disclaimer
 
-Este repositorio no pretende atribuirse la autoría de las metodologías o conceptos utilizados.
+Este repositorio no pretende atribuirse la autoría de todos los conceptos, frameworks o metodologías referenciadas.
 
-Muchos de los prompts y estructuras documentadas han sido desarrollados mediante **trabajo asistido por IA**, combinando:
+El contenido combina:
 
-- experiencia práctica en Product Management  
-- metodologías ampliamente conocidas en el ámbito de producto  
-- procesos iterativos de mejora utilizando herramientas de IA  
+- experiencia práctica en Product Management
+- prácticas ampliamente conocidas de producto y delivery
+- workflows asistidos por IA
+- refinamiento iterativo de prompts
+- aprendizaje público de la comunidad de producto e IA
 
-El objetivo principal de este repositorio es **organizar herramientas prácticas de trabajo**, no reclamar propiedad sobre ideas que forman parte del ecosistema general de producto o inteligencia artificial.
+El propósito de este repositorio es organizar herramientas prácticas de trabajo, no reclamar propiedad sobre conceptos que ya forman parte del ecosistema general de Product Management o inteligencia artificial.
+
+Las personas usuarias deben revisar y adaptar todas las salidas generadas a partir de estos prompts antes de usarlas en contextos profesionales, operativos o críticos para el negocio.
 
 ---
 
 ## Inspiración y Recursos
 
-Este repositorio ha sido parcialmente inspirado por recursos interesantes de la comunidad.
+Este repositorio fue parcialmente inspirado por recursos útiles de la comunidad de Product Management e IA.
 
-Uno de los más relevantes:
+Una referencia relevante es:
 
 https://github.com/deanpeters/product-manager-prompts/
 
-Este repositorio sirvió como referencia para algunas de las ideas de organización utilizadas en la estructura de prompts.
-
-Es posible que se agreguen más recursos en el futuro.
-
----
-
-## Mejoras y Evolución
-
-Este repositorio está pensado para evolucionar de forma continua.
-
-Algunas mejoras futuras pueden incluir:
-
-- nuevos prompts especializados  
-- frameworks de Product Management  
-- workflows documentados  
-- plantillas reutilizables  
-- ejemplos de uso en escenarios reales  
-
-La visión a largo plazo es convertir este repositorio en un **toolkit estructurado de Product Management asistido por IA**.
-
----
-
-## Propósito del Repositorio
-
-El objetivo principal de este proyecto es construir una **biblioteca organizada de herramientas para Product Managers que trabajan con IA**.
-
-Con el tiempo este repositorio puede incluir:
-
-- prompts reutilizables  
-- frameworks de producto  
-- workflows operativos  
-- plantillas de soporte  
-- ejemplos prácticos de uso  
-
-Más que una simple colección de prompts, la idea es que este proyecto evolucione hacia un **playbook práctico de Product Management apoyado por inteligencia artificial**.
+Podrán agregarse referencias adicionales a medida que el playbook evolucione.
 
 ---
 
