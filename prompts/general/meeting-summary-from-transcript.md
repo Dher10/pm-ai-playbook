@@ -10,6 +10,30 @@ This prompt is designed for general use and does not require a predefined templa
 
 ---
 
+## When to Use
+
+Use this prompt when you have a meeting transcript and need to convert it into a concise, structured and actionable meeting summary.
+
+This is a general prompt. It is designed for situations where no predefined company, client or spreadsheet template is required.
+
+Use this prompt for:
+
+- product meetings
+- discovery sessions
+- requirement gathering sessions
+- stakeholder alignment meetings
+- sprint planning, reviews or retrospectives
+- internal follow-up meetings where decisions and commitments must be captured
+
+Do not use this prompt when:
+
+- a formal legal or corporate meeting minutes format is required
+- the output must follow a strict predefined template
+- the goal is to extract only tasks, risks, requirements or decisions without a broader meeting summary
+- the transcript includes sensitive or private information that should not be processed in a public or non-approved environment
+
+---
+
 ## Inputs
 
 Required input:
@@ -184,6 +208,7 @@ If any issues are detected, correct them before generating the final output.
 
 | Version | Description |
 |--------|-------------|
+| v3.1 | Added When to Use guidance to clarify usage context, limitations and general prompt classification |
 | v3.0 | Refactored the prompt into a general meeting summary prompt focused on structured notes, decisions, confirmed commitments and Word-friendly output without requiring a predefined template |
 | v2.0 | Updated prompt structure to align with repository standards and support Excel or Word templates |
 | v1.0 | Initial version of the prompt |
